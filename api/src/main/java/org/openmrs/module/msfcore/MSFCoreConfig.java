@@ -21,6 +21,7 @@ public class MSFCoreConfig {
     public final static String MODULE_PRIVILEGE = "MSF Core Privilege";
 
     public final static String REGISTRATION_APP_EXTENSION_ID = "referenceapplication.registrationapp.registerPatient";
+    public final static String SEARCH_APP_EXTENSION_ID = "coreapps.findPatient";
 
     public final static String MSF_REGISTRATION_APP_EXTENSION_ID = "msfcore.registrationapp";
 

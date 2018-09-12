@@ -1,0 +1,50 @@
+[
+  {
+    "id":"msfcore.auditlogsapp",
+    "extensions":[
+      {
+        "id":"msfcore.auditlogsapp.page",
+        "extensionPointId":"systemAdministration.apps",
+        "type":"link",
+        "label":"msfcore.auditlogs.label",
+        "order":20,
+        "url":"msfcore/auditLogManager.page",
+        "icon":"icon-book"
+      }
+    ]
+  },
+  {
+    "id":"msfcore.configurationapp",
+    "extensions":[
+      {
+        "id":"msfcore.configurationapp.page",
+        "extensionPointId":"systemAdministration.apps",
+        "type":"link",
+        "label":"msfcore.configurations",
+        "order":21,
+        "url":"msfcore/configuration.page",
+        "icon":" icon-wrench"
+      }
+    ]
+  },
+  {
+    "id": "msfcore.findPatient",
+    "instanceOf": "coreapps.template.findPatient",
+    "description": "Basic patient search that goes to the patient dashboard",
+    "order": 2,
+    "extensions": [
+      {
+        "id": "msfcore.findPatientLink",
+        "extensionPointId": "org.openmrs.referenceapplication.homepageLink",
+        "type": "link",
+        "label": "coreapps.findPatient.app.label",
+        "url": "coreapps/findpatient/findPatient.page?app=msfcore.findPatient",
+        "icon": "icon-search",
+        "requiredPrivilege": "App: coreapps.findPatient"
+      }
+    ],
+    "config": {
+      "registrationAppLink": "registrationapp/registerPatient.page?appId=msfcore.registrationapp"
+    }
+  }
+]
