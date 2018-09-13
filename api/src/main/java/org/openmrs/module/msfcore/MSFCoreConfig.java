@@ -241,4 +241,8 @@ public class MSFCoreConfig {
     public final static String GP_MANADATORY = "msfcore.mandatory";
 
     public final static String TASK_AUTO_CLOSE_VISIT = "Auto Close Visits Task";
+
+    // Encounter types
+    public static final String MSF_NCD_BASELINE_ENCOUNTER_TYPE_UUID = "fa6f3ff5-b784-43fb-ab35-a08ab7dbf074";
+    public static final String MSF_NCD_FOLLOWUP_ENCOUNTER_TYPE_UUID = "4aa6553b-be5a-413a-93fc-23962bc594e8";
 }
