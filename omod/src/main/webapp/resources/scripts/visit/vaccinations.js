@@ -115,58 +115,58 @@ angular.module("vaccinations", [ "constants", "ngDialog", "obsService", "encount
 
                 var sequences = [
                     {
-                        label: "pihcore.vaccination.sequence.doseZero",
+                        label: "msfcore.vaccination.sequence.doseZero",
                         sequenceNumber: 0
                     },
                     {
-                        label: "pihcore.vaccination.sequence.doseOne",
+                        label: "msfcore.vaccination.sequence.doseOne",
                         sequenceNumber: 1
                     },
                     {
-                        label: "pihcore.vaccination.sequence.doseTwo",
+                        label: "msfcore.vaccination.sequence.doseTwo",
                         sequenceNumber: 2
                     },
                     {
-                        label: "pihcore.vaccination.sequence.doseThree",
+                        label: "msfcore.vaccination.sequence.doseThree",
                         sequenceNumber: 3
                     },
                     {
-                        label: "pihcore.vaccination.sequence.doseBoosterOne",
+                        label: "msfcore.vaccination.sequence.doseBoosterOne",
                         sequenceNumber: 11
                     },
                     {
-                        label: "pihcore.vaccination.sequence.doseBoosterTwo",
+                        label: "msfcore.vaccination.sequence.doseBoosterTwo",
                         sequenceNumber: 12
                     }
                 ]
                 var vaccinations = [
                     {
-                        label: "pihcore.concept.name." + Concepts.bcgVaccination.uuid,
+                        label: "msfcore.concept.name." + Concepts.bcgVaccination.uuid,
                         concept: Concepts.bcgVaccination,
                         doses: [ 1 ]
                     },
                     {
-                        label: "pihcore.concept.name." + Concepts.polioVaccination.uuid,
+                        label: "msfcore.concept.name." + Concepts.polioVaccination.uuid,
                         concept: Concepts.polioVaccination,
                         doses: [ 0, 1, 2, 3, 11, 12 ]
                     },
                     {
-                        label: "pihcore.concept.name." + Concepts.pentavalentVaccination.uuid,
+                        label: "msfcore.concept.name." + Concepts.pentavalentVaccination.uuid,
                         concept: Concepts.pentavalentVaccination,
                         doses: [ 1, 2, 3 ]
                     },
                     {
-                        label: "pihcore.concept.name." + Concepts.rotavirusVaccination.uuid,
+                        label: "msfcore.concept.name." + Concepts.rotavirusVaccination.uuid,
                         concept: Concepts.rotavirusVaccination,
                         doses: [ 1, 2 ]
                     },
                     {
-                        label: "pihcore.concept.name." + Concepts.measlesRubellaVaccination.uuid,
+                        label: "msfcore.concept.name." + Concepts.measlesRubellaVaccination.uuid,
                         concept: Concepts.measlesRubellaVaccination,
                         doses: [ 1 ]
                     },
                     {
-                        label: "pihcore.concept.name." + Concepts.diptheriaTetanusVaccination.uuid,
+                        label: "msfcore.concept.name." + Concepts.diptheriaTetanusVaccination.uuid,
                         concept: Concepts.diptheriaTetanusVaccination,
                         doses: [ 0, 1, 2, 3, 11, 12 ]
                     }
