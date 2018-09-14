@@ -6,14 +6,8 @@ import org.openmrs.ui.framework.page.PageRequest;
 import org.openmrs.ui.framework.page.PageRequestMapper;
 import org.springframework.stereotype.Component;
 
-/**
- *
- * Overrides the mapping to the allergyui allergies page to an MSF one
- *
- */
 @Component
-public class AllergyUIPageRequestMapper implements PageRequestMapper {
-
+public class CoreAppsPatientDashboardPageRequestMapper implements PageRequestMapper {
     protected final Log log = LogFactory.getLog(getClass());
     /**
      * Implementations should call {@link PageRequest#setProviderNameOverride(String)} and
@@ -24,11 +18,11 @@ public class AllergyUIPageRequestMapper implements PageRequestMapper {
      * @return true if this page was mapped (by overriding the provider and/or page), false otherwise
      */
     public boolean mapRequest(PageRequest request) {
-        if (request.getProviderName().equals("allergyui")) {
-            if (request.getPageName().equals("allergies")) {
-                // change to the custom page for MSF
+        if (request.getProviderName().equals("coreapps")) {
+            if (request.getPageName().equals("patientdashboard")) {
+                // change to the custom visit page
                 request.setProviderNameOverride("msfcore");
-                request.setPageNameOverride("allergies");
+                request.setPageNameOverride("visit");
 
                 log.info(request.toString());
                 return true;

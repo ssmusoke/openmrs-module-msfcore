@@ -176,6 +176,7 @@ public class MSFCoreActivator extends BaseModuleActivator {
         for (File file : new File(getClass().getClassLoader().getResource("htmlforms").getPath()).listFiles()) {
             if (file.exists() && file.getName().endsWith("Form.xml")) {
                 formXmls.add(file.getAbsoluteFile());
+                log.info("Loading HTML from from " + file.getAbsolutePath());
             }
         }
         return formXmls.toArray(new File[formXmls.size()]);

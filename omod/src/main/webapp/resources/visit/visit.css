@@ -1,0 +1,551 @@
+/* line 14, ../../../../compass/sass-external/uicommons-scss/fragments/_status-container.scss */
+.status-container {
+  color: #003f5e;
+  background: white;
+  font-size: 0.9em;
+  display: inline-block;
+  border: 1px solid #EAEAEA;
+  padding: 5px;
+  margin: 5px 0;
+  -moz-box-shadow: 1px 1px 1px white;
+  -webkit-box-shadow: 1px 1px 1px white;
+  -o-box-shadow: 1px 1px 1px white;
+  box-shadow: 1px 1px 1px white;
+}
+
+/* line 18, ../../../../compass/sass-external/uicommons-scss/fragments/_status-container.scss */
+.status {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  margin: 2px 4px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 25, ../../../../compass/sass-external/uicommons-scss/fragments/_status-container.scss */
+.status.active {
+  background: #a1d030;
+  border: 1px solid #91bc2b;
+  -moz-box-shadow: 0 0 5px #a1d030;
+  -webkit-box-shadow: 0 0 5px #a1d030;
+  -o-box-shadow: 0 0 5px #a1d030;
+  box-shadow: 0 0 5px #a1d030;
+}
+/* line 31, ../../../../compass/sass-external/uicommons-scss/fragments/_status-container.scss */
+.status.error {
+  background: #ff6666;
+  border: 1px solid #ff5252;
+  -moz-box-shadow: 0 0 5px #ff6666;
+  -webkit-box-shadow: 0 0 5px #ff6666;
+  -o-box-shadow: 0 0 5px #ff6666;
+  box-shadow: 0 0 5px #ff6666;
+}
+
+/* line 6, ../../../../compass/sass/visit/visit.scss */
+div.waitingForConsult-filter {
+  float: right;
+}
+
+/* line 10, ../../../../compass/sass/visit/visit.scss */
+.selectable {
+  cursor: pointer;
+}
+
+/* line 14, ../../../../compass/sass/visit/visit.scss */
+.icon-delete-blank::before {
+  width: 12.58px;
+  content: ' ';
+}
+
+/* line 19, ../../../../compass/sass/visit/visit.scss */
+i.highlight {
+  color: #501d3d;
+}
+
+/* line 24, ../../../../compass/sass/visit/visit.scss */
+#visit-app .indent {
+  margin-left: 40px;
+}
+
+/* line 30, ../../../../compass/sass/visit/visit.scss */
+#visit-list tr:hover {
+  background-color: #007fff;
+  color: white;
+}
+/* line 34, ../../../../compass/sass/visit/visit.scss */
+#visit-list tr.selected-visit {
+  font-family: "OpenSansBold";
+}
+/* line 37, ../../../../compass/sass/visit/visit.scss */
+#visit-list .visit-list-start-time {
+  font-size: 0.8em;
+}
+
+/* line 42, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown {
+  display: table;
+}
+/* line 45, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown li {
+  display: table-row;
+}
+/* line 49, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown li.list-element:hover {
+  background-color: #007fff;
+  color: white;
+}
+/* line 53, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown li.selected-visit {
+  font-family: "OpenSansBold";
+}
+/* line 57, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown span {
+  display: table-cell;
+  white-space: nowrap;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+/* line 66, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown .visit-list-date {
+  text-align: right;
+}
+/* line 70, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown .visit-list-date-header, #visit-list-dropdown .visit-list-encounters-header {
+  font-weight: bold;
+}
+/* line 74, ../../../../compass/sass/visit/visit.scss */
+#visit-list-dropdown #visit-list-full-details-element {
+  text-align: center;
+}
+
+/* line 79, ../../../../compass/sass/visit/visit.scss */
+#visit-actions-dropdown {
+  display: table;
+  button-font-weight: 0.6em;
+}
+/* line 86, ../../../../compass/sass/visit/visit.scss */
+#visit-actions-dropdown li {
+  display: table-row;
+}
+/* line 90, ../../../../compass/sass/visit/visit.scss */
+#visit-actions-dropdown li.list-element:hover {
+  background-color: #007fff;
+  color: white;
+}
+/* line 95, ../../../../compass/sass/visit/visit.scss */
+#visit-actions-dropdown span {
+  display: table-cell;
+  white-space: nowrap;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* line 106, ../../../../compass/sass/visit/visit.scss */
+#visit-type {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 111, ../../../../compass/sass/visit/visit.scss */
+#visit-type .actions {
+  font-size: 0.7em;
+}
+/* line 115, ../../../../compass/sass/visit/visit.scss */
+#visit-type .template-name {
+  font-size: 0.7em;
+}
+/* line 119, ../../../../compass/sass/visit/visit.scss */
+#visit-type .template-name select {
+  font-size: 0.8em;
+}
+
+/* line 124, ../../../../compass/sass/visit/visit.scss */
+#visit-details {
+  display: inline-block;
+}
+
+/* line 128, ../../../../compass/sass/visit/visit.scss */
+.visit-dates {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+/* line 134, ../../../../compass/sass/visit/visit.scss */
+.visit-location {
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+/* line 139, ../../../../compass/sass/visit/visit.scss */
+.new-encounter-button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 143, ../../../../compass/sass/visit/visit.scss */
+.new-encounter-button a.button {
+  width: 160px;
+  text-align: left;
+  padding-left: 40px;
+}
+/* line 149, ../../../../compass/sass/visit/visit.scss */
+.new-encounter-button.add-multiple-encounter a {
+  background: white;
+}
+
+/* line 155, ../../../../compass/sass/visit/visit.scss */
+.actions a {
+  cursor: pointer;
+}
+
+/* line 160, ../../../../compass/sass/visit/visit.scss */
+.visit-element {
+  border: 1px solid #bbbbbb;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* .incomplete {
+     background-color: $pihSecondaryGrey !important;
+   }*/
+}
+/* line 167, ../../../../compass/sass/visit/visit.scss */
+.visit-element .date-span {
+  width: 12%;
+  display: inline-block;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+/* line 174, ../../../../compass/sass/visit/visit.scss */
+.visit-element .time-span {
+  width: 13%;
+  display: inline-block;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+/* line 181, ../../../../compass/sass/visit/visit.scss */
+.visit-element .encounter-span {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 186, ../../../../compass/sass/visit/visit.scss */
+.visit-element .encounter-span > span {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 193, ../../../../compass/sass/visit/visit.scss */
+.visit-element .obs-span {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 199, ../../../../compass/sass/visit/visit.scss */
+.visit-element .vitals-header-span {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 205, ../../../../compass/sass/visit/visit.scss */
+.visit-element .provider-and-location-span {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 211, ../../../../compass/sass/visit/visit.scss */
+.visit-element .allergy-details-span {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 217, ../../../../compass/sass/visit/visit.scss */
+.visit-element .one-third {
+  width: 30%;
+  display: inline-block;
+}
+/* line 222, ../../../../compass/sass/visit/visit.scss */
+.visit-element .one-half {
+  width: 46%;
+  display: inline-block;
+}
+/* line 227, ../../../../compass/sass/visit/visit.scss */
+.visit-element .two-thirds {
+  width: 63%;
+  display: inline-block;
+}
+/* line 232, ../../../../compass/sass/visit/visit.scss */
+.visit-element .ninety-percent {
+  width: 90%;
+  display: inline-block;
+}
+/* line 241, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header {
+  padding: 3px;
+}
+/* line 244, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 249, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header .title {
+  font-family: "OpenSansBold";
+  padding-right: 10px;
+}
+/* line 254, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header .details {
+  font-size: 0.9em;
+}
+/* line 258, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header .encounter-type {
+  font-family: "OpenSansBold";
+  padding-right: 20px;
+}
+/* line 263, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header .encounter-provider {
+  font-size: 0.8em;
+}
+/* line 267, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header .overall-actions {
+  float: right;
+}
+/* line 270, ../../../../compass/sass/visit/visit.scss */
+.visit-element .header .overall-actions a {
+  cursor: pointer;
+}
+/* line 276, ../../../../compass/sass/visit/visit.scss */
+.visit-element .content {
+  border-top: 1px solid #bbbbbb;
+  padding: 5px;
+  font-size: 0.9em;
+}
+/* line 281, ../../../../compass/sass/visit/visit.scss */
+.visit-element .content .col2 {
+  display: inline-block;
+  width: 48%;
+}
+/* line 286, ../../../../compass/sass/visit/visit.scss */
+.visit-element .content .align-top {
+  vertical-align: top;
+}
+/* line 291, ../../../../compass/sass/visit/visit.scss */
+.visit-element .content p.aligned label {
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #501d3d;
+  vertical-align: top;
+}
+/* line 298, ../../../../compass/sass/visit/visit.scss */
+.visit-element .content p.aligned span {
+  vertical-align: top;
+}
+/* line 303, ../../../../compass/sass/visit/visit.scss */
+.visit-element .content .book-keeping {
+  text-align: right;
+  color: #bbbbbb;
+  font-size: 0.9em;
+}
+
+/* line 312, ../../../../compass/sass/visit/visit.scss */
+.visit-actions {
+  text-align: left;
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-bottom: 0;
+  border: 1px solid #CCC;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 320, ../../../../compass/sass/visit/visit.scss */
+.visit-actions.past-visit {
+  color: #ffa000;
+  background: white;
+}
+/* line 325, ../../../../compass/sass/visit/visit.scss */
+.visit-actions .label {
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 0.9em;
+}
+
+/* line 334, ../../../../compass/sass/visit/visit.scss */
+.visit-actions a, .spaced a {
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+/* line 338, ../../../../compass/sass/visit/visit.scss */
+.visit-actions a:hover, .spaced a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 345, ../../../../compass/sass/visit/visit.scss */
+#choose-another-visit, #visit-actions, #expand-all, #contract-all, #print-actions {
+  display: inline-block;
+  float: right;
+  font-size: 0.7em;
+}
+/* line 350, ../../../../compass/sass/visit/visit.scss */
+#choose-another-visit button, #visit-actions button, #expand-all button, #contract-all button, #print-actions button {
+  padding: 8px;
+}
+
+/* line 355, ../../../../compass/sass/visit/visit.scss */
+#visit-overview-header {
+  height: 25px;
+}
+
+/* line 360, ../../../../compass/sass/visit/visit.scss */
+table.vaccination-table td, table.vaccination-table th {
+  font-size: 0.9em;
+  text-align: center;
+}
+/* line 364, ../../../../compass/sass/visit/visit.scss */
+table.vaccination-table td.impossible, table.vaccination-table th.impossible {
+  background-color: #bbbbbb;
+}
+
+/* line 370, ../../../../compass/sass/visit/visit.scss */
+.spaced-paragraphs > p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+/* line 375, ../../../../compass/sass/visit/visit.scss */
+.ngdialog-content {
+  width: 750px !important;
+}
+
+/* line 380, ../../../../compass/sass/visit/visit.scss */
+.visit-dates table {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 387, ../../../../compass/sass/visit/visit.scss */
+#plan-heading > * {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* line 393, ../../../../compass/sass/visit/visit.scss */
+#draft-plan {
+  border: 1px #bbbbbb solid;
+  background-color: #f3f3f3;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 400, ../../../../compass/sass/visit/visit.scss */
+#draft-plan .signature {
+  text-align: right;
+  color: #7b7b7b;
+}
+
+/* line 406, ../../../../compass/sass/visit/visit.scss */
+.lozenge {
+  display: inline-block;
+  padding: 0px 8px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+/* line 414, ../../../../compass/sass/visit/visit.scss */
+.lozenge.active {
+  color: white;
+  background: #51a351;
+  border-color: #51a351;
+}
+
+/* line 422, ../../../../compass/sass/visit/visit.scss */
+.angular-datepicker > input[type=text] {
+  display: inline;
+  min-width: 0;
+}
+
+/* line 429, ../../../../compass/sass/visit/visit.scss */
+.value {
+  color: #2200ff;
+  font-weight: bold;
+}
+
+/* line 437, ../../../../compass/sass/visit/visit.scss */
+[class^="glyphicon-"],
+[class*=" glyphicon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  padding: 0.2em;
+  /* sprites.less reset */
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+/* line 458, ../../../../compass/sass/visit/visit.scss */
+[class^="glyphicon-"]:before,
+[class*=" glyphicon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+/* line 464, ../../../../compass/sass/visit/visit.scss */
+.glyphicon-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 465, ../../../../compass/sass/visit/visit.scss */
+.glyphicon-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 466, ../../../../compass/sass/visit/visit.scss */
+.glyphicon-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 467, ../../../../compass/sass/visit/visit.scss */
+.glyphicon-chevron-down:before {
+  content: "\f078";
+}
+
+@media print {
+  /* line 472, ../../../../compass/sass/visit/visit.scss */
+  body {
+    font-size: 0.8em !important;
+  }
+
+  /* line 477, ../../../../compass/sass/visit/visit.scss */
+  #visit-actions, #choose-another-visit, #expand-all, #contract-all, #print-actions,
+  a [class^="icon-"], a [class*=" icon-"], .icon-pencil {
+    display: none !important;
+  }
+
+  /* line 481, ../../../../compass/sass/visit/visit.scss */
+  div.visit-element {
+    page-break-inside: avoid;
+  }
+}

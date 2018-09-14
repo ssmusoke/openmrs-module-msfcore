@@ -1,0 +1,26 @@
+/* line 1, ../../../../compass/sass/visit/waitingForConsult.scss */
+#waitingForConsultHeader {
+  overflow: hidden;
+}
+
+/* line 5, ../../../../compass/sass/visit/waitingForConsult.scss */
+#headerLabel {
+  width: 50%;
+  float: left;
+}
+
+/* line 10, ../../../../compass/sass/visit/waitingForConsult.scss */
+#refreshTimeDiv {
+  width: 50%;
+  float: left;
+}
+
+/* line 15, ../../../../compass/sass/visit/waitingForConsult.scss */
+#timeToRefresh {
+  background-color: #f1ff60;
+}
+
+/* line 19, ../../../../compass/sass/visit/waitingForConsult.scss */
+#refreshMessage {
+  float: right;
+}
