@@ -22,6 +22,7 @@ public class MSFMetadataBundle extends AbstractMetadataBundle {
 
         log.info("Installing LocationAttributeTypes");
         install(LocationAttributeTypes.LOCATION_CODE);
+        install(LocationAttributeTypes.LOCATION_UID);
 
         log.info("Installing LocationTags");
         install(LocationTags.MISSION);

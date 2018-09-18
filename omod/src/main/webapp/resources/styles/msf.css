@@ -1,16 +1,25 @@
+/* THESE SHOULD BE REMOVED
+In production a single concatonated and minified file should be used instead. @Import blocks paraless loading and slows down site load over an internet connection. (Z) */
+
 @import url('buttons.css');
 @import url('navigation.css');
 @import url('typography.css');
+@import url('forms.css');
 @import url('dashboard.css');
+@import url('registration.css');
+@import url('ncd.css');
 
-
-/* COLORS 
+/* COLORS
 
 This can be converted to custom propterties / variables at a later stage. A build process may be needed to ensure compatibility with all browsers.
 
 INTERACTION:
 Medium Turquoise: 55D6BE
 Aero Blue: D0FEF5
+
+INFORMATION:
+Info blue: 538CAC
+    lightest: B0CAD9
 
 BRANDING:
 
@@ -22,15 +31,22 @@ Dark grey: 424C55
     lightest: 757C83
 
 White: FFFFFF
-    Darker: 
+    Darker:
 
 */
 
 
 /* STRUCTURE */
 
-a, a:visited, a.visited, a:hover {
-    color: #55D6BE;
+a, a:hover,
+header a, 
+header a:hover, 
+header a:link {
+    color:#4EC3AD;
+}
+
+a:visited, a.visited {
+    color: #4EC3AD;
 }
 
 html {
@@ -43,7 +59,7 @@ body {
     max-width: 100%;
     margin: 0px auto;
     color: #373F46;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 header {
@@ -61,7 +77,66 @@ header {
 #body-wrapper {
     background: none;
     max-width: 1200px;
-    margin: 8px auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Vitals Section */
+
+#content > .container.half-width {
+    background: #fff;
+    padding: 24px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px;
+    overflow: hidden;
+}
+
+#content > .container.half-width h1 {
+    text-align:center;
+}
+
+#content > .container.half-width #actions {
+    height: 60px;
+    width: 44%;
+    padding: 16px 30% 16px 31%;
+    margin: 0 -30px 0 -26px;
+    background: #55D6BE;
+    box-shadow: inset rgba(0,0,0,0.3) 0 0 8px;
+}
+
+#form-actions-container {
+    background: #D0FEF5;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow:rgba(0,0,0,0.1) 0 4px 8px;
+    box-sizing: border-box;
+    height: 6rem;
+    padding:1rem;
+    order: 3;
+}
+
+#form-actions-container a {
+    margin:0.5rem;
+    display: inline-block;
+}
+
+#form-actions-container a:nth-of-type(2) {
+    float:left;
+}
+
+#content.container {
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+}
+
+.simple-form-ui form#htmlform {
+    display:flex;
+}
+
+/* UTILITY CLASSES */
+
+.float-left {
+    width: 80%;
 }
 
 /* TOASTS */
@@ -69,7 +144,6 @@ header {
 .toast-item {
     font-family: "OpenSans", Arial, sans-serif;
     font-size: 16px;
-    background ;
     box-shadow: rgba(0, 0, 0, .3) 0 0 16px;
     border: none;
     order-radius: 8px;
@@ -86,13 +160,13 @@ form, .form {
     overflow: visible
 }
 
-form input, 
-form select, 
-form textarea, 
-form ul.select, 
-.form input, 
-.form select, 
-.form textarea, 
+form input,
+form select,
+form textarea,
+form ul.select,
+.form input,
+.form select,
+.form textarea,
 .form ul.select {
     outline: none;
     border-bottom: 2px solid #ccc;
@@ -101,23 +175,24 @@ form ul.select,
     border-radius:4px;
 }
 
-form input:focus, 
-form select:focus, 
-form textarea:focus, 
-form ul.select:focus, 
-.form input:focus, 
-.form select:focus, 
-.form textarea:focus, 
+form input:focus,
+form select:focus,
+form textarea:focus,
+form ul.select:focus,
+.form input:focus,
+.form select:focus,
+.form textarea:focus,
 .form ul.select:focus {
     outline: none;
     border-bottom: 2px solid #55D6BE;
     background: #fff;
+    border-radius: 8px;
 }
 
 /* TABLES */
 
 table {
-    margin-bottom: 24px;
+    /*margin-bottom: 24px;*/
     box-shadow:rgba(0,0,0,0.1) 0 4px 8px;
 }
 
@@ -127,8 +202,8 @@ table {
     color: #373F46;
 }
 
-.ui-state-default, 
-.ui-widget-content .ui-state-default, 
+.ui-state-default,
+.ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 table thead th {
     border:none;
@@ -148,9 +223,12 @@ table td:last-child {
 }
 
 .fg-toolbar {
+    background: #424C55;
+    border-radius: 0 0 8px 8px;
+    box-shadow: rgba(0,0,0,0.1) 0 4px 8px;
+    border-top: 8px solid #373F46;
+    color: #fff;
     padding: 8px;
-    background: rgba(255,255,255,0.9);
-    border-radius: 8px;
 }
 
 .dataTables_info {
