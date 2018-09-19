@@ -71,6 +71,12 @@ public class MSFCoreActivator extends BaseModuleActivator {
         Context.getService(AppFrameworkService.class).disableApp(MSFCoreConfig.SEARCH_APP_EXTENSION_ID);
         Context.getService(AppFrameworkService.class).enableApp(MSFCoreConfig.MSF_SEARCH_APP_EXTENSION_ID);
 
+        // Change the urls to the visits pages
+        Context.getAdministrationService().updateGlobalProperty(MSFCoreConfig.GP_COREAPPS_VISITS_PAGE_URL,
+                        "/msfcore/visit/visit.page?patientId={{patientId}}#visits");
+        Context.getAdministrationService().updateGlobalProperty(MSFCoreConfig.GP_COREAPPS_VISITS_PAGE_WITH_SPECIFIC_VISIT_URL,
+                        "/msfcore/visit/visit.page?patientId={{patientId}}&visitId={{visit.id}}#");
+
         log.info("Installing MSF metadata");
         Context.getService(MetadataDeployService.class).installBundle(Context.getRegisteredComponents(MSFMetadataBundle.class).get(0));
 
@@ -147,6 +153,12 @@ public class MSFCoreActivator extends BaseModuleActivator {
         // disable the MSF find patient app and enable the default core apps one
         Context.getService(AppFrameworkService.class).enableApp(MSFCoreConfig.SEARCH_APP_EXTENSION_ID);
         Context.getService(AppFrameworkService.class).disableApp(MSFCoreConfig.MSF_SEARCH_APP_EXTENSION_ID);
+
+        // Reset the urls to the default visits pages
+        Context.getAdministrationService().updateGlobalProperty(MSFCoreConfig.GP_COREAPPS_VISITS_PAGE_URL,
+                        "/coreapps/patientdashboard/patientDashboard.page?patientId={{patientId}}#visits");
+        Context.getAdministrationService().updateGlobalProperty(MSFCoreConfig.GP_COREAPPS_VISITS_PAGE_WITH_SPECIFIC_VISIT_URL,
+                        "/coreapps/patientdashboard/patientDashboard.page?patientId={{patientId}}&visitId={{visit.id}}#");
     }
 
     /**

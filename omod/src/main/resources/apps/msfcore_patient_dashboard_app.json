@@ -1,0 +1,19 @@
+[
+  {
+    "id": "msfcore.visits",
+    "label": "coreapps.clinicianfacing.visits",
+    "icon": "icon-calendar",
+    "order": 1,
+    "extensions": [
+      {
+        "id": "org.openmrs.module.coreapps.vitals.clinicianDashboardSecondColumn",
+        "appId": "msfcore.visits",
+        "extensionPointId": "patientDashboard.secondColumnFragments",
+        "extensionParams": {
+          "provider": "coreapps",
+          "fragment": "clinicianfacing/visitsSection"
+        }
+      }
+    ]
+  }
+]

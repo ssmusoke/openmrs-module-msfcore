@@ -27,6 +27,8 @@ public class MSFCoreConfig {
     public final static String MSF_SEARCH_APP_EXTENSION_ID = "msfcore.findPatient";
 
     public final static String GP_INSTANCE_ID = "msfcore.instanceId";
+    public final static String GP_COREAPPS_VISITS_PAGE_URL = "coreapps.visitsPageUrl";
+    public final static String GP_COREAPPS_VISITS_PAGE_WITH_SPECIFIC_VISIT_URL = "coreapps.visitsPageWithSpecificVisitUrl";
 
     public final static String LOCATION_ATTR_TYPE_CODE_UUID = "5a504478-1701-49da-9d8b-3e1d12ab6c5a";
 
