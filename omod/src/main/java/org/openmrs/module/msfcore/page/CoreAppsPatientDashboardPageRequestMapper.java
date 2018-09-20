@@ -19,10 +19,11 @@ public class CoreAppsPatientDashboardPageRequestMapper implements PageRequestMap
      */
     public boolean mapRequest(PageRequest request) {
         if (request.getProviderName().equals("coreapps")) {
-            if (request.getPageName().equals("patientdashboard")) {
+            log.info(request.getPageName());
+            if (request.getPageName().equals("patientdashboard/patientDashboard")) {
                 // change to the custom visit page
                 request.setProviderNameOverride("msfcore");
-                request.setPageNameOverride("visit");
+                request.setPageNameOverride("visit/visit");
 
                 log.info(request.toString());
                 return true;

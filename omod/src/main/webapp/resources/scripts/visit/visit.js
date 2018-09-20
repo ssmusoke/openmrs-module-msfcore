@@ -16,10 +16,6 @@ angular.module("visit", [ "filters", "constants", "encounterTypeConfig", "visitS
                     emr.updateBreadcrumbs();
                 }
             })
-            .state("vaccinations", {
-                url: "/vaccinations",
-                templateUrl: "templates/vaccination/vaccinationsPage.page"
-            })
             .state("visitList", {
                 url: "/visitList",
                 templateUrl: "templates/visitList.page"
@@ -598,6 +594,7 @@ angular.module("visit", [ "filters", "constants", "encounterTypeConfig", "visitS
 
                             AppFrameworkService.getUserExtensionsFor("patientDashboard.visitActions").then(function (ext) {
                                 $scope.visitActions = ext;
+                                alert(ext);
                             })
                     });
                 }
@@ -782,6 +779,7 @@ angular.module("visit", [ "filters", "constants", "encounterTypeConfig", "visitS
                     // TODO
                 } else
                 {
+                    alert('Visit action '); alert(visitAction);
                     var visitModel = angular.extend({}, $scope.visit);
                     visitModel.id = $scope.visit.uuid; // HACK! TODO: change our extensions to refer to visit.uuid
                     visitModel.active = !$scope.visit.stopDatetime;

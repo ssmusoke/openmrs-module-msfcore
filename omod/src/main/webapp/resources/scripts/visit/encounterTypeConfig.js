@@ -24,16 +24,19 @@ angular.module("encounterTypeConfig", ["constants"])
             classes: "indent",
             shortTemplate: "templates/sections/defaultEncounterShort.page",
             longTemplate: "templates/sections/defaultHtmlFormEncounterLong.page",
-            templateModelUrl: "/htmlformentryui/htmlform/viewEncounterWithHtmlForm/getAsHtml.action?encounterId={{encounter.uuid}}&definitionUiResource=pihcore:htmlforms/section-chief-complaint.xml",
-            editUrl: "/htmlformentryui/htmlform/editHtmlFormWithStandardUi.page?patientId={{visit.patient.uuid}}&visitId={{visit.uuid}}&encounterId={{encounter.uuid}}&definitionUiResource=pihcore:htmlforms/section-chief-complaint.xml&returnUrl={{returnUrl}}&breadcrumbOverride={{breadcrumbOverride}}"
+            templateModelUrl: "/htmlformentryui/htmlform/viewEncounterWithHtmlForm/getAsHtml.action?encounterId={{encounter.uuid}}&definitionUiResource=msfcore:htmlforms/ncdBaselineConsultationForm.xml",
+            editUrl: "/htmlformentryui/htmlform/editHtmlFormWithStandardUi.page?patientId={{visit.patient.uuid}}&visitId={{visit.uuid}}&encounterId={{encounter.uuid}}&definitionUiResource=msfcore:htmlforms/ncdBaselineConsultationForm.xml&returnUrl={{returnUrl}}&breadcrumbOverride={{breadcrumbOverride}}"
         }
 
         // we include the edit url here because the "Next" navigator functionality uses it
         var familyhistory = {
             type: "include-section",
             id: "familyhistory",
-            template: "templates/allergies/reviewAllergies.page",
-            editUrl: "/allergyui/allergies.page?patientId={{patient.uuid}}&returnUrl={{returnUrl}}"
+            classes: "indent",
+            shortTemplate: "templates/sections/defaultEncounterShort.page",
+            longTemplate: "templates/sections/defaultHtmlFormEncounterLong.page",
+            templateModelUrl: "/htmlformentryui/htmlform/viewEncounterWithHtmlForm/getAsHtml.action?encounterId={{encounter.uuid}}&definitionUiResource=msfcore:htmlforms/ncdBaselineFamilyHistoryForm.xml",
+            editUrl: "/htmlformentryui/htmlform/editHtmlFormWithStandardUi.page?patientId={{visit.patient.uuid}}&visitId={{visit.uuid}}&encounterId={{encounter.uuid}}&definitionUiResource=msfcore:htmlforms/ncdBaselineFamilyHistoryForm.xml&returnUrl={{returnUrl}}&breadcrumbOverride={{breadcrumbOverride}}"
         };
 
 
@@ -51,7 +54,7 @@ angular.module("encounterTypeConfig", ["constants"])
         encounterTypeConfig[EncounterTypes.ncdBaseline.uuid] = {
             defaultState: "short",
             shortTemplate: "templates/encounters/defaultEncounterShort.page",
-            longTemplate: "templates/encounters/defaultEncounterLong.page",
+            longTemplate: "templates/encounters/defaultHtmlFormEncounterLong.page",
             editUrl: hfeStandardEditUrl,
             showOnVisitList: true,
             sections: [
@@ -62,7 +65,7 @@ angular.module("encounterTypeConfig", ["constants"])
 
         encounterTypeConfig[EncounterTypes.ncdFollowup.uuid] = {
             defaultState: "short",
-            shortTemplate: "templates/encounters/checkInShort.page",
+            shortTemplate: "templates/encounters/defaultEncounterShort.page",
             longTemplate: "templates/encounters/defaultHtmlFormEncounterLong.page",
             templateModelUrl: "/module/htmlformentry/encounter.json?encounter={{encounter.uuid}}",
             icon: "icon-check-in",
